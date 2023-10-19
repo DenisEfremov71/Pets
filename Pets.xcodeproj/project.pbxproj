@@ -11,6 +11,8 @@
 		72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EE82AE0B1E1000E26CF /* ContentView.swift */; };
 		72C76EEB2AE0B1E3000E26CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */; };
 		72C76EEE2AE0B1E3000E26CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C76EED2AE0B1E3000E26CF /* Preview Assets.xcassets */; };
+		72C76EF82AE0B4EC000E26CF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EF72AE0B4EC000E26CF /* WebService.swift */; };
+		72C76EFB2AE0B583000E26CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EFA2AE0B583000E26CF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		72C76EE82AE0B1E1000E26CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C76EED2AE0B1E3000E26CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72C76EF72AE0B4EC000E26CF /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		72C76EFA2AE0B583000E26CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		72C76EE52AE0B1E1000E26CF /* Pets */ = {
 			isa = PBXGroup;
 			children = (
-				72C76EE62AE0B1E1000E26CF /* PetsApp.swift */,
-				72C76EE82AE0B1E1000E26CF /* ContentView.swift */,
+				72C76EF42AE0B486000E26CF /* App */,
 				72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */,
 				72C76EEC2AE0B1E3000E26CF /* Preview Content */,
+				72C76EF62AE0B4CD000E26CF /* Services */,
+				72C76EF92AE0B56A000E26CF /* Utils */,
+				72C76EF52AE0B48B000E26CF /* Views */,
 			);
 			path = Pets;
 			sourceTree = "<group>";
@@ -65,6 +71,38 @@
 				72C76EED2AE0B1E3000E26CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72C76EF42AE0B486000E26CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72C76EE62AE0B1E1000E26CF /* PetsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		72C76EF52AE0B48B000E26CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72C76EE82AE0B1E1000E26CF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72C76EF62AE0B4CD000E26CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72C76EF72AE0B4EC000E26CF /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72C76EF92AE0B56A000E26CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				72C76EFA2AE0B583000E26CF /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C76EF82AE0B4EC000E26CF /* WebService.swift in Sources */,
 				72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */,
 				72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */,
+				72C76EFB2AE0B583000E26CF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
