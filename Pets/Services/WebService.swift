@@ -9,16 +9,18 @@ import Foundation
 
 enum NetworkError: Error {
     case badUrl
-    case noData
-    case decodingError
+    case noDataForRemoteResource
+    case noDataForLocalResource
+    case screenModelDecodingError
     case invalidServerResponse
+    case localFileNotFound
 }
 
-class WebService {
+class WebService: NetworkService {
 
-    func load(resource: String) async throws -> ScreenModel {
+    func load(_ resource: String) async throws -> ScreenModel {
 
-        guard let url = URL(string: resource) else {
+        guard let url = Constants.ScreeenResources.resource(for: resource) else {
             throw NetworkError.badUrl
         }
 
@@ -29,7 +31,7 @@ class WebService {
         }
 
         guard let screenModel = try? JSONDecoder().decode(ScreenModel.self, from: data) else {
-            throw NetworkError.decodingError
+            throw NetworkError.screenModelDecodingError
         }
 
         return screenModel
