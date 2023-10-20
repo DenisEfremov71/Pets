@@ -23,6 +23,11 @@
 		72C76F102AE1D936000E26CF /* pet-listing.json in Resources */ = {isa = PBXBuildFile; fileRef = 72C76F0F2AE1D936000E26CF /* pet-listing.json */; };
 		72C76F122AE1DA38000E26CF /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F112AE1DA38000E26CF /* LocalService.swift */; };
 		72C76F142AE1DA9E000E26CF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F132AE1DA9E000E26CF /* NetworkService.swift */; };
+		72C76F162AE2ACD8000E26CF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F152AE2ACD8000E26CF /* JSON.swift */; };
+		72C76F182AE2B636000E26CF /* CarouselUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F172AE2B636000E26CF /* CarouselUIModel.swift */; };
+		72C76F1A2AE2B6B6000E26CF /* CarouselComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */; };
+		72C76F1C2AE2B7DD000E26CF /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */; };
+		72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		72C76F0F2AE1D936000E26CF /* pet-listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pet-listing.json"; sourceTree = "<group>"; };
 		72C76F112AE1DA38000E26CF /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
 		72C76F132AE1DA9E000E26CF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		72C76F152AE2ACD8000E26CF /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		72C76F172AE2B636000E26CF /* CarouselUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUIModel.swift; sourceTree = "<group>"; };
+		72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselComponent.swift; sourceTree = "<group>"; };
+		72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				72C76EE82AE0B1E1000E26CF /* ContentView.swift */,
+				72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */,
+				72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,8 +155,10 @@
 		72C76EFD2AE1450F000E26CF /* UIModels */ = {
 			isa = PBXGroup;
 			children = (
-				72C76EFE2AE14534000E26CF /* ScreenModel.swift */,
+				72C76F172AE2B636000E26CF /* CarouselUIModel.swift */,
 				72C76F052AE14B30000E26CF /* FeaturedImageUIModel.swift */,
+				72C76F152AE2ACD8000E26CF /* JSON.swift */,
+				72C76EFE2AE14534000E26CF /* ScreenModel.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -152,8 +166,9 @@
 		72C76F002AE148CB000E26CF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				72C76F012AE148E8000E26CF /* UIComponent.swift */,
+				72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */,
 				72C76F032AE149AF000E26CF /* FeaturedImageComponent.swift */,
+				72C76F012AE148E8000E26CF /* UIComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -247,13 +262,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C76EF82AE0B4EC000E26CF /* WebService.swift in Sources */,
+				72C76F162AE2ACD8000E26CF /* JSON.swift in Sources */,
 				72C76F092AE14D32000E26CF /* View+Extensions.swift in Sources */,
+				72C76F1A2AE2B6B6000E26CF /* CarouselComponent.swift in Sources */,
 				72C76F022AE148E8000E26CF /* UIComponent.swift in Sources */,
 				72C76F042AE149AF000E26CF /* FeaturedImageComponent.swift in Sources */,
 				72C76F0C2AE152DB000E26CF /* PetListViewModel.swift in Sources */,
+				72C76F1C2AE2B7DD000E26CF /* CarouselView.swift in Sources */,
 				72C76F122AE1DA38000E26CF /* LocalService.swift in Sources */,
 				72C76EFF2AE14534000E26CF /* ScreenModel.swift in Sources */,
 				72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */,
+				72C76F182AE2B636000E26CF /* CarouselUIModel.swift in Sources */,
+				72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */,
 				72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */,
 				72C76EFB2AE0B583000E26CF /* Constants.swift in Sources */,
 				72C76F062AE14B30000E26CF /* FeaturedImageUIModel.swift in Sources */,

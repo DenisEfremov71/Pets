@@ -16,13 +16,7 @@ struct FeaturedImageComponent: UIComponent {
     }
 
     func render() -> AnyView {
-        AsyncImage(url: uiModel.imageUrl) { image in
-            image.resizable()
-                .aspectRatio(contentMode: .fill)
-        } placeholder: {
-            ProgressView()
-        }
-        .toAnyView()
+        FeaturedImageView(url: uiModel.imageUrl).toAnyView()
     }
 
 }
