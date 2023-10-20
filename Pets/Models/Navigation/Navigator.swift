@@ -23,12 +23,16 @@ struct SheetView<V: View>: View {
 
 class Navigator {
 
-    static func perform<V: View>(action: Action, content: @escaping () -> V) -> AnyView {
+    static func perform<V: View>(action: Action, payload: Any? = nil, content: @escaping () -> V) -> AnyView {
         var destinationView: AnyView
 
         switch action.destination {
         case .petDetails:
-            destinationView = Text("Pet Details").toAnyView()
+            if let payload = payload as? URL {
+                destinationView = Text(payload.absoluteString).toAnyView()
+            } else {
+                destinationView = EmptyView().toAnyView()
+            }
         }
 
         switch action.type {
