@@ -28,6 +28,9 @@
 		72C76F1A2AE2B6B6000E26CF /* CarouselComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */; };
 		72C76F1C2AE2B7DD000E26CF /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */; };
 		72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */; };
+		72C76F212AE2E082000E26CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F202AE2E082000E26CF /* Action.swift */; };
+		72C76F242AE2E188000E26CF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F232AE2E188000E26CF /* Route.swift */; };
+		72C76F262AE2E64E000E26CF /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F252AE2E64E000E26CF /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselComponent.swift; sourceTree = "<group>"; };
 		72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageView.swift; sourceTree = "<group>"; };
+		72C76F202AE2E082000E26CF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		72C76F232AE2E188000E26CF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		72C76F252AE2E64E000E26CF /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,9 @@
 		72C76EFC2AE14508000E26CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				72C76F1F2AE2E06F000E26CF /* Actions */,
 				72C76F002AE148CB000E26CF /* Components */,
+				72C76F222AE2E173000E26CF /* Navigation */,
 				72C76EFD2AE1450F000E26CF /* UIModels */,
 			);
 			path = Models;
@@ -188,6 +196,23 @@
 				72C76F0B2AE152DB000E26CF /* PetListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		72C76F1F2AE2E06F000E26CF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				72C76F202AE2E082000E26CF /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		72C76F222AE2E173000E26CF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				72C76F232AE2E188000E26CF /* Route.swift */,
+				72C76F252AE2E64E000E26CF /* Navigator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C76EF82AE0B4EC000E26CF /* WebService.swift in Sources */,
+				72C76F212AE2E082000E26CF /* Action.swift in Sources */,
 				72C76F162AE2ACD8000E26CF /* JSON.swift in Sources */,
 				72C76F092AE14D32000E26CF /* View+Extensions.swift in Sources */,
 				72C76F1A2AE2B6B6000E26CF /* CarouselComponent.swift in Sources */,
@@ -273,6 +299,8 @@
 				72C76EFF2AE14534000E26CF /* ScreenModel.swift in Sources */,
 				72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */,
 				72C76F182AE2B636000E26CF /* CarouselUIModel.swift in Sources */,
+				72C76F242AE2E188000E26CF /* Route.swift in Sources */,
+				72C76F262AE2E64E000E26CF /* Navigator.swift in Sources */,
 				72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */,
 				72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */,
 				72C76EFB2AE0B583000E26CF /* Constants.swift in Sources */,
