@@ -15,12 +15,14 @@ struct CarouselView: View {
         ScrollView(.horizontal) {
             HStack {
                 ForEach(uiModel.imageUrls, id: \.self) { url in
-                    AsyncImage(url: url) { image in
-                        image
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                    } placeholder: {
-                        ProgressView()
+                    Navigator.perform(action: uiModel.action) {
+                        AsyncImage(url: url) { image in
+                            image
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                        } placeholder: {
+                            ProgressView()
+                        }
                     }
                 }
             }
@@ -30,5 +32,5 @@ struct CarouselView: View {
 }
 
 #Preview {
-    CarouselView(uiModel: CarouselUIModel(imageUrls: []))
+    CarouselView(uiModel: CarouselUIModel(imageUrls: [], action: Action(type: .sheet, destination: .petDetails)))
 }
