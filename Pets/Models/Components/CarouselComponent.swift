@@ -10,10 +10,7 @@ import SwiftUI
 struct CarouselComponent: UIComponent {
 
     let uiModel: CarouselUIModel
-
-    var uniqueId: String {
-        ComponentType.carousel.rawValue
-    }
+    let id = UUID()
 
     func render() -> AnyView {
         CarouselView(uiModel: uiModel).toAnyView()

@@ -10,10 +10,7 @@ import SwiftUI
 struct FeaturedImageComponent: UIComponent {
 
     let uiModel: FeaturedImageUIModel
-
-    var uniqueId: String {
-        ComponentType.featuredImage.rawValue
-    }
+    let id = UUID()
 
     func render() -> AnyView {
         FeaturedImageView(url: uiModel.imageUrl).toAnyView()

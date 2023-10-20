@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                ForEach(petListVM.components, id: \.uniqueId) { component in
+                ForEach(petListVM.components, id: \.id) { component in
                     component.render()
                 }
             }.onAppear {

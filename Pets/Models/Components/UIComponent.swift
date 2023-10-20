@@ -8,7 +8,7 @@
 import SwiftUI
 
 protocol UIComponent {
-    var uniqueId: String { get }
+    var id: UUID { get }
 
     func render() -> AnyView
 }
