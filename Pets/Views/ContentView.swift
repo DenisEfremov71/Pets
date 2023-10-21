@@ -12,11 +12,13 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            List {
                 ForEach(petListVM.components, id: \.id) { component in
                     component.render()
                 }
-            }.onAppear {
+            }
+            .listStyle(.plain)
+            .onAppear {
                 Task {
                     await petListVM.load()
                 }

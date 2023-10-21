@@ -30,6 +30,10 @@ class Navigator {
         case .petDetails:
             if let payload = payload as? CarouselCellUIModel {
                 destinationView = PetDetailsView(petId: payload.petId).toAnyView()
+            } else if let payload = payload as? RowUIModel {
+                destinationView = PetDetailsView(petId: payload.id)
+                    .navigationTitle(payload.title)
+                    .toAnyView()
             } else {
                 destinationView = EmptyView().toAnyView()
             }
