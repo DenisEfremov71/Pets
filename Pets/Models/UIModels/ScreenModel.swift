@@ -12,6 +12,7 @@ enum ComponentType: String, Decodable {
     case carousel
     case textRow
     case ratingRow
+    case list
 }
 
 enum ComponentError: Error {
@@ -65,6 +66,11 @@ extension ScreenModel {
                     throw ComponentError.decodingError
                 }
                 components.append(RatingRowComponent(uiModel: uiModel))
+            case .list:
+                guard let uiModel: ListUIModel = component.data.decode() else {
+                    throw ComponentError.decodingError
+                }
+                components.append(ListComponent(uiModel: uiModel))
             }
         }
 

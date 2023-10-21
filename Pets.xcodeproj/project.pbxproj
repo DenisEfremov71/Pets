@@ -12,6 +12,9 @@
 		723C8BFF2AE4347B001A54BF /* RatingRowUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8BFE2AE4347B001A54BF /* RatingRowUIModel.swift */; };
 		723C8C012AE434BE001A54BF /* RatingRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8C002AE434BE001A54BF /* RatingRowComponent.swift */; };
 		723C8C032AE436A6001A54BF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8C022AE436A6001A54BF /* RatingView.swift */; };
+		723C8C052AE46821001A54BF /* ListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8C042AE46821001A54BF /* ListUIModel.swift */; };
+		723C8C072AE46A3D001A54BF /* ListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8C062AE46A3D001A54BF /* ListComponent.swift */; };
+		723C8C092AE46B0A001A54BF /* RowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8C082AE46B0A001A54BF /* RowComponent.swift */; };
 		72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EE62AE0B1E1000E26CF /* PetsApp.swift */; };
 		72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EE82AE0B1E1000E26CF /* ContentView.swift */; };
 		72C76EEB2AE0B1E3000E26CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		723C8BFE2AE4347B001A54BF /* RatingRowUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRowUIModel.swift; sourceTree = "<group>"; };
 		723C8C002AE434BE001A54BF /* RatingRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRowComponent.swift; sourceTree = "<group>"; };
 		723C8C022AE436A6001A54BF /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		723C8C042AE46821001A54BF /* ListUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUIModel.swift; sourceTree = "<group>"; };
+		723C8C062AE46A3D001A54BF /* ListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponent.swift; sourceTree = "<group>"; };
+		723C8C082AE46B0A001A54BF /* RowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowComponent.swift; sourceTree = "<group>"; };
 		72C76EE32AE0B1E1000E26CF /* Pets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C76EE62AE0B1E1000E26CF /* PetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsApp.swift; sourceTree = "<group>"; };
 		72C76EE82AE0B1E1000E26CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 				72C76F172AE2B636000E26CF /* CarouselUIModel.swift */,
 				72C76F052AE14B30000E26CF /* FeaturedImageUIModel.swift */,
 				72C76F152AE2ACD8000E26CF /* JSON.swift */,
+				723C8C042AE46821001A54BF /* ListUIModel.swift */,
 				723C8BFE2AE4347B001A54BF /* RatingRowUIModel.swift */,
 				72C76EFE2AE14534000E26CF /* ScreenModel.swift */,
 				723C8BFA2AE40251001A54BF /* TextRowUIModel.swift */,
@@ -196,7 +203,9 @@
 			children = (
 				72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */,
 				72C76F032AE149AF000E26CF /* FeaturedImageComponent.swift */,
+				723C8C062AE46A3D001A54BF /* ListComponent.swift */,
 				723C8C002AE434BE001A54BF /* RatingRowComponent.swift */,
+				723C8C082AE46B0A001A54BF /* RowComponent.swift */,
 				723C8BFC2AE402EE001A54BF /* TextRowComponent.swift */,
 				72C76F012AE148E8000E26CF /* UIComponent.swift */,
 			);
@@ -329,14 +338,17 @@
 				72C76F292AE34DD5000E26CF /* PetDetailsView.swift in Sources */,
 				72C76F242AE2E188000E26CF /* Route.swift in Sources */,
 				72C76F262AE2E64E000E26CF /* Navigator.swift in Sources */,
+				723C8C052AE46821001A54BF /* ListUIModel.swift in Sources */,
 				72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */,
 				72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */,
+				723C8C072AE46A3D001A54BF /* ListComponent.swift in Sources */,
 				72C76EFB2AE0B583000E26CF /* Constants.swift in Sources */,
 				723C8C012AE434BE001A54BF /* RatingRowComponent.swift in Sources */,
 				72C76F062AE14B30000E26CF /* FeaturedImageUIModel.swift in Sources */,
 				72C76F142AE1DA9E000E26CF /* NetworkService.swift in Sources */,
 				72C76F0E2AE15707000E26CF /* Dictionary+Extensions.swift in Sources */,
 				723C8C032AE436A6001A54BF /* RatingView.swift in Sources */,
+				723C8C092AE46B0A001A54BF /* RowComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

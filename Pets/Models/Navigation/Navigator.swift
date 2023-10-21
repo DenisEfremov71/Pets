@@ -40,6 +40,13 @@ class Navigator {
             return SheetView(content: {
                 content()
             }, destinationView: destinationView).toAnyView()
+        case .push:
+            return NavigationLink {
+                destinationView
+            } label: {
+                content()
+            }
+            .toAnyView()
         }
     }
 
