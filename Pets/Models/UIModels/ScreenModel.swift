@@ -20,7 +20,7 @@ enum ComponentError: Error {
 }
 
 struct ComponentModel: Decodable {
-    let type: ComponentType
+    let type: ComponentType?
     let data: [String: Any]
 
     private enum CodingKeys: CodingKey {
@@ -30,7 +30,7 @@ struct ComponentModel: Decodable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.type = try container.decode(ComponentType.self, forKey: .type)
+        self.type = try? container.decode(ComponentType.self, forKey: .type)
         self.data = try container.decode(JSON.self, forKey: .data).value as! [String: Any]
     }
 }
@@ -71,6 +71,8 @@ extension ScreenModel {
                     throw ComponentError.decodingError
                 }
                 components.append(ListComponent(uiModel: uiModel))
+            case .none:
+                components.append(EmptyComponent())
             }
         }
 
