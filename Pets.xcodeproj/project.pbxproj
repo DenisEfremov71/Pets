@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723C8BFB2AE40251001A54BF /* TextRowUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8BFA2AE40251001A54BF /* TextRowUIModel.swift */; };
+		723C8BFD2AE402EE001A54BF /* TextRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C8BFC2AE402EE001A54BF /* TextRowComponent.swift */; };
 		72C76EE72AE0B1E1000E26CF /* PetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EE62AE0B1E1000E26CF /* PetsApp.swift */; };
 		72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76EE82AE0B1E1000E26CF /* ContentView.swift */; };
 		72C76EEB2AE0B1E3000E26CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */; };
@@ -31,9 +33,13 @@
 		72C76F212AE2E082000E26CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F202AE2E082000E26CF /* Action.swift */; };
 		72C76F242AE2E188000E26CF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F232AE2E188000E26CF /* Route.swift */; };
 		72C76F262AE2E64E000E26CF /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F252AE2E64E000E26CF /* Navigator.swift */; };
+		72C76F292AE34DD5000E26CF /* PetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F282AE34DD5000E26CF /* PetDetailsView.swift */; };
+		72C76F2B2AE34EC5000E26CF /* PetDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C76F2A2AE34EC5000E26CF /* PetDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		723C8BFA2AE40251001A54BF /* TextRowUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowUIModel.swift; sourceTree = "<group>"; };
+		723C8BFC2AE402EE001A54BF /* TextRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowComponent.swift; sourceTree = "<group>"; };
 		72C76EE32AE0B1E1000E26CF /* Pets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C76EE62AE0B1E1000E26CF /* PetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsApp.swift; sourceTree = "<group>"; };
 		72C76EE82AE0B1E1000E26CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 		72C76F202AE2E082000E26CF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		72C76F232AE2E188000E26CF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		72C76F252AE2E64E000E26CF /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		72C76F272AE3383C000E26CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		72C76F282AE34DD5000E26CF /* PetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsView.swift; sourceTree = "<group>"; };
+		72C76F2A2AE34EC5000E26CF /* PetDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,7 @@
 		72C76EE52AE0B1E1000E26CF /* Pets */ = {
 			isa = PBXGroup;
 			children = (
+				72C76F272AE3383C000E26CF /* Info.plist */,
 				72C76EF42AE0B486000E26CF /* App */,
 				72C76EEA2AE0B1E3000E26CF /* Assets.xcassets */,
 				72C76F072AE14D01000E26CF /* Extensions */,
@@ -127,6 +137,7 @@
 				72C76EE82AE0B1E1000E26CF /* ContentView.swift */,
 				72C76F1B2AE2B7DD000E26CF /* CarouselView.swift */,
 				72C76F1D2AE2BE37000E26CF /* FeaturedImageView.swift */,
+				72C76F282AE34DD5000E26CF /* PetDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 				72C76F052AE14B30000E26CF /* FeaturedImageUIModel.swift */,
 				72C76F152AE2ACD8000E26CF /* JSON.swift */,
 				72C76EFE2AE14534000E26CF /* ScreenModel.swift */,
+				723C8BFA2AE40251001A54BF /* TextRowUIModel.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -176,6 +188,7 @@
 			children = (
 				72C76F192AE2B6B6000E26CF /* CarouselComponent.swift */,
 				72C76F032AE149AF000E26CF /* FeaturedImageComponent.swift */,
+				723C8BFC2AE402EE001A54BF /* TextRowComponent.swift */,
 				72C76F012AE148E8000E26CF /* UIComponent.swift */,
 			);
 			path = Components;
@@ -194,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				72C76F0B2AE152DB000E26CF /* PetListViewModel.swift */,
+				72C76F2A2AE34EC5000E26CF /* PetDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -295,10 +309,14 @@
 				72C76F042AE149AF000E26CF /* FeaturedImageComponent.swift in Sources */,
 				72C76F0C2AE152DB000E26CF /* PetListViewModel.swift in Sources */,
 				72C76F1C2AE2B7DD000E26CF /* CarouselView.swift in Sources */,
+				723C8BFD2AE402EE001A54BF /* TextRowComponent.swift in Sources */,
 				72C76F122AE1DA38000E26CF /* LocalService.swift in Sources */,
+				72C76F2B2AE34EC5000E26CF /* PetDetailsViewModel.swift in Sources */,
+				723C8BFB2AE40251001A54BF /* TextRowUIModel.swift in Sources */,
 				72C76EFF2AE14534000E26CF /* ScreenModel.swift in Sources */,
 				72C76EE92AE0B1E1000E26CF /* ContentView.swift in Sources */,
 				72C76F182AE2B636000E26CF /* CarouselUIModel.swift in Sources */,
+				72C76F292AE34DD5000E26CF /* PetDetailsView.swift in Sources */,
 				72C76F242AE2E188000E26CF /* Route.swift in Sources */,
 				72C76F262AE2E64E000E26CF /* Navigator.swift in Sources */,
 				72C76F1E2AE2BE37000E26CF /* FeaturedImageView.swift in Sources */,
@@ -443,6 +461,8 @@
 				DEVELOPMENT_TEAM = WY9AX8R5R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pets/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +492,8 @@
 				DEVELOPMENT_TEAM = WY9AX8R5R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pets/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var petListVM = PetListViewModel(service: LocalService())
+    @StateObject private var petListVM = PetListViewModel(service: WebService())
 
     var body: some View {
         NavigationView {

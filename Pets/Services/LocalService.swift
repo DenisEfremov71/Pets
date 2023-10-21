@@ -24,6 +24,10 @@ class LocalService: NetworkService {
 
         return screenModel
     }
-    
+
+    func loadPetDetails(_ resource: String) async throws -> ScreenModel {
+        ScreenModel(pageTitle: "Dummy", components: [])
+    }
+
 
 }

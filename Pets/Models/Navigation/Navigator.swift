@@ -29,7 +29,7 @@ class Navigator {
         switch action.destination {
         case .petDetails:
             if let payload = payload as? CarouselCellUIModel {
-                destinationView = Text("Pet ID: \(payload.petId)").toAnyView()
+                destinationView = PetDetailsView(petId: payload.petId).toAnyView()
             } else {
                 destinationView = EmptyView().toAnyView()
             }

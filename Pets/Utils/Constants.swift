@@ -13,6 +13,10 @@ struct Constants {
         static let baseUrl = "localhost:3000"
         static let petListing = "pet-listing"
 
+        static func petDetails(petId: Int) -> String {
+            return "/pet-details/\(petId)"
+        }
+
         static func resource(for resourceName: String) -> URL? {
             var components = URLComponents()
             components.scheme = "http"
@@ -25,6 +29,10 @@ struct Constants {
     struct Urls {
         static let baseUrl = "http://localhost:3000"
         static let petListing = "\(baseUrl)/pet-listing"
+
+        static func petDetails(petId: Int) -> String {
+            return "\(baseUrl)/pet-details/\(petId)"
+        }
     }
 
 }

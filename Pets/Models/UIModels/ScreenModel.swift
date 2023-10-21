@@ -10,6 +10,7 @@ import Foundation
 enum ComponentType: String, Decodable {
     case featuredImage
     case carousel
+    case textRow
 }
 
 enum ComponentError: Error {
@@ -53,6 +54,11 @@ extension ScreenModel {
                     throw ComponentError.decodingError
                 }
                 components.append(CarouselComponent(uiModel: uiModel))
+            case .textRow:
+                guard let uiModel: TextRowUIModel = component.data.decode() else {
+                    throw ComponentError.decodingError
+                }
+                components.append(TextRowComponent(uiModel: uiModel))
             }
         }
 
